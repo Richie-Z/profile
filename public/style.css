@@ -1,0 +1,76 @@
+:root {
+  --secondary-color: #22577a;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  overflow: hidden;
+}
+
+#home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.right-side {
+  margin: 19em -5em;
+}
+.right-side h5 {
+  font-size: 1.5em;
+  color: var(--secondary-color);
+}
+.right-side h1 {
+  font-size: 3.5em;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.left-side {
+  min-width: 70%;
+  background: url("images/shape1.svg");
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.left-side > img {
+  margin: -16% 0px 0px 25%;
+  width: 60%;
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow: hidden;
+  }
+  .right-side {
+    margin-top: 240px;
+    margin-right: 200px;
+    position: absolute;
+  }
+  .right-side h5 {
+    font-size: 15px;
+    color: var(--secondary-color);
+  }
+  .right-side h1 {
+    font-size: 25px;
+    letter-spacing: 0px;
+  }
+  .right-side p {
+    font-size: 10px;
+  }
+  .left-side {
+    /* min-width: 100%; */
+    background-size: 96em;
+    background-position: left;
+  }
+  .left-side > img {
+    margin: 40% 0px 0px 24%;
+    width: 100%;
+  }
+}
