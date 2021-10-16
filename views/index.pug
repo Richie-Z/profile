@@ -6,7 +6,18 @@ html
     link(rel="shortcut icon",href="/favicon.ico")
     meta(name="viewport",content="width=device-width , initial-scale=1, shrink-to-fit=no")
     meta(name="theme-color",content="#000")
+    link(rel="stylesheet",href="/css/style.css")
     title=title
 body
-  // home
-  include components/home.pug
+  include navigator
+
+  div(class="container", data-0="transform:translateX(0%);",data-6000="transform:translateX(-500%)")
+    include components/home.pug
+    include components/about.pug
+    include components/services.pug
+    include components/projects.pug
+    include components/techs.pug
+    include components/contact.pug
+  script(src="/js/skrollr.min.js")
+  script.
+    var s = skrollr.init();

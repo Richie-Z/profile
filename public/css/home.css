@@ -12,16 +12,18 @@
 body {
   overflow: hidden;
 }
-
-#home {
+.container {
+  width: 100%;
+}
+.home {
   position: relative;
-  min-height: 100vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-wrap: nowrap;
 }
 .right-side {
-  margin: 19em -5em;
+  margin: 19em 5em;
+  min-width: 30%;
 }
 .right-side h5 {
   font-size: 1.5em;
@@ -34,43 +36,14 @@ body {
 }
 .left-side {
   min-width: 70%;
-  background: url("images/shape1.svg");
-  background-size: 200%;
-  background-repeat: no-repeat;
-  background-position: left;
 }
-.left-side > img {
-  margin: -16% 0px 0px 25%;
-  width: 60%;
-}
-
-@media (max-width: 600px) {
-  body {
-    overflow: hidden;
-  }
-  .right-side {
-    margin-top: 240px;
-    margin-right: 200px;
-    position: absolute;
-  }
-  .right-side h5 {
-    font-size: 15px;
-    color: var(--secondary-color);
-  }
-  .right-side h1 {
-    font-size: 25px;
-    letter-spacing: 0px;
-  }
-  .right-side p {
-    font-size: 10px;
-  }
-  .left-side {
-    /* min-width: 100%; */
-    background-size: 96em;
-    background-position: left;
-  }
-  .left-side > img {
-    margin: 40% 0px 0px 24%;
-    width: 100%;
-  }
+.black-bg {
+  width: 100%;
+  top: 0;
+  left: 17em;
+  z-index: -1;
+  position: absolute;
+  height: 261%;
+  background: #000;
+  transform: skew(-35deg, 193deg);
 }
