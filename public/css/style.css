@@ -1,8 +1,12 @@
+:root {
+  --secondary-color: #22577a;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
 }
 .container {
@@ -14,15 +18,13 @@
 }
 .container section {
   min-width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-  background: #fffee1;
 }
 .container section:nth-child(2) {
   background: #e2fcff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container section:nth-child(3) {
   background: #d0eaff;
@@ -49,6 +51,39 @@
   z-index: 100;
   bottom: 0;
   right: 2em;
+}
+.home {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.home > .content {
+  text-align: left !important;
+  position: absolute !important;
+  margin: 15em 8em;
+}
+.home h1 {
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.home h5 {
+  font-size: 1.5em;
+  color: var(--secondary-color);
+}
+.home p {
+  font-size: 1.2em !important;
+}
+.home .right-side {
+  background-image: url("/images/shape1.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  width: 100%;
+  margin-left: 15em;
+}
+.home .right-side > img {
+  margin-left: 300px;
 }
 @media (max-width: 991px) {
   .container {
