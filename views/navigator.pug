@@ -3,7 +3,7 @@
   id="slider-input"
   type="range"
   min="0"
-  max="6"
+  max="5"
   value="0"
   step="1"
   aria-label="navigation"
@@ -11,7 +11,8 @@
 script.
   let slider = document.getElementById("slider-input")
   slider.addEventListener('input',(evt)=> {
-    window.scrollTo(0,(slider.value * 1000 ))
+    if(slider.value == 0) window.scrollTo(0,0)
+    else window.scrollTo(0,((slider.value * 1000 ) + (200 * slider.value)))
   })
   window.addEventListener('scroll', () => {
     let pageOffset = window.pageYOffset
