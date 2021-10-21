@@ -20,12 +20,6 @@
   min-width: 100%;
   height: 100vh;
 }
-.container section:nth-child(2) {
-  background: #e2fcff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .container section:nth-child(3) {
   background: #d0eaff;
 }
@@ -84,6 +78,20 @@
 }
 .home .right-side > img {
   margin-left: 300px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  position: relative;
+}
+.about .left-side {
+  background-image: url("/images/shape2.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  width: 101%;
 }
 @media (max-width: 991px) {
   .container {

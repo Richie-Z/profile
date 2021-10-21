@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1664.428" height="767.104" viewBox="0 0 1664.428 767.104">
+  <defs>
+    <clipPath id="clip-path">
+      <rect y="795" width="1664.428" height="767.104" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect width="1048" height="1285" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Scroll_Group_2" data-name="Scroll Group 2" transform="translate(0 -795)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <g id="Component_1_2" data-name="Component 1 – 2" transform="matrix(0.809, 0.588, -0.588, 0.809, 755.304, 0)">
+      <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(75.739)" clip-path="url(#clip-path-2)">
+        <g transform="translate(-463 251)">
+          <rect id="Rectangle_1" data-name="Rectangle 1" width="1048" height="1285" transform="translate(463 -251)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
