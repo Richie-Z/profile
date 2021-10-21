@@ -1,7 +1,20 @@
-section
+-
+  const data = [
+    { "title":"UI Design","image":"/images/user-interface.png"},
+    { "title":"Frontend Development", "image":"/images/ux-interface.png"},
+    { "title":"Web Design", "image":"/images/website-design.png"},
+    { "title":"Backend Development", "image":"/images/backend.png"}
+  ]
+section#service
+  .heading
+    h2  Service's
+    hr
   .content
-    h2  Section Three
-    p   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-      | corporis ex neque facere aliquam, amet quae atque libero
-      | accusantium! Mollitia, omnis. Qui perspiciatis sit sunt veritatis
-      | nam saepe praesentium repellat!
+    each v in data
+      .item
+        img(src=v.image)
+        h5=v.title
+        br
+        p   Lorem ipsum dolor sit aconsect dipisicing elit, 
+          | sed do eiusmod to incididunt uabore etdolore magna aliqua.
+  img.rectangle(src="images/shape4.svg" draggable="false")
