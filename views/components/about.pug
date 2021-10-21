@@ -1,9 +1,13 @@
 section.about
   .left-side
-    img(src="/images/image0.png")
+    img(src="/images/image0.png" draggable="false")
   .content
     h2  About Me
+    hr
+    each _ in Array(4)
+      br
     p   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
       | corporis ex neque facere aliquam, amet quae atque libero
       | accusantium! Mollitia, omnis. Qui perspiciatis sit sunt veritatis
       | nam saepe praesentium repellat!
+  img.circle(src="images/shape3.svg" draggable="false")
