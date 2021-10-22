@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://Richie-Z.github.io/profile",
   "scripts": {
     "dev": "nodemon ./index.js",
-    "watch": "browser-sync start --config bs-config.js"
+    "watch": "browser-sync start --config bs-config.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.5",
+    "gh-pages": "^3.2.3",
     "nodemon": "^2.0.13"
   },
   "dependencies": {
